@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { Link } from 'react-router-dom';
 
 function Update() {
   const [name,setName]=useState("")
@@ -28,8 +29,9 @@ function Update() {
   }
   return (
     <section> 
-      <div className="flex justify-center"><h2 className=' shadow-xl font-semibold	 bg-black text-white text-xl p-4 rounded-xl w-96  justify-center'>Update</h2></div>
-      <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+      <div className="flex justify-center py-3">
+        <h2 className='font-semibold bg-black text-white text-xl p-4 rounded-xl w-96  justify-center'>Update</h2></div>
+      <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-10">
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
           <div className="mb-2 flex justify-center">
             <svg
@@ -94,6 +96,7 @@ function Update() {
                 Update Details<ArrowRight className="ml-2" size={18} />
                  </button>
               </div>
+              
             </div>
           </form>
         </div>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
-
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const header={"Access-control-Allow-Origin":"*"}
@@ -103,6 +102,17 @@ export function Login() {
                 >
                  Add Account <ArrowRight className="ml-2" size={18} />
                  </button>
+              </div>
+              <div>
+                <Link to={'/read'}>
+                <button
+                  type="button"
+                  className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
+                    
+                >
+                View Details<ArrowRight className="ml-2" size={18} />
+                 </button>
+                 </Link>
               </div>
             </div>
           </form>
